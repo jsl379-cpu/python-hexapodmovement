@@ -2,7 +2,10 @@ import threading
 import time
 import math
 
-from scservo_sdk import *
+from .port_handler import *
+from .protocol_packet_handler import *
+from .group_sync_write import *
+from .group_sync_read import *
 from .values import *
 
 
