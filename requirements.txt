@@ -1,1 +1,2 @@
 pyserial
+ftservo-python-sdk
