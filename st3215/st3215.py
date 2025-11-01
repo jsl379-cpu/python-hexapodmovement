@@ -21,7 +21,7 @@ class ST3215(protocol_packet_handler):
         if not self.portHandler.openPort():
             raise ValueError(f"Could not open port: {device}")
 
-        protocol_packet_handler.__init__(self, self.portHandler, 0)
+        protocol_packet_handler.__init__(self, self.portHandler)
 
         self.groupSyncWrite = GroupSyncWrite(self, STS_ACC, 7)
         self.lock = threading.Lock()
