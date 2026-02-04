@@ -1,3 +1,22 @@
+# CUPI INSTRUCTIONS
+workflow occurs in the cupi folder. 
+
+first install prerequisites
+``` pip install pyserial ```
+
+then find the modem of the servo driver you are using
+
+For linux:
+```lsusb```
+
+For mac
+```ls /dev/tty.*```
+
+Use custom_list.py to find all the servo ids that are currently connected.
+If some servos are missing from the servo list, that means 2 servos likely share the same id. To change the id, connect one servo by itself to the driver board and run the change_id.py script.
+
+Finally, you can test your servo scripts inside of test.py or a new python file you create. This repo contains the st3215 python library which you can use to simplify your code.
+
 # ST3215 Test Suite
 
 This directory contains individual test scripts for testing ST3215 servo motor functionality. Each test focuses on specific functionality and can be run independently.

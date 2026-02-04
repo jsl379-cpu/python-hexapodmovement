@@ -7,6 +7,8 @@ Tests basic communication with servo ID 1.
 import os
 import sys
 from st3215 import ST3215
+from dotenv import load_dotenv
+load_dotenv(dotenv_path='../cupi/.env')
 
 def main():
     print("=== ST3215 Ping Test ===")

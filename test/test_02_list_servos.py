@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 import os
 import sys
 from st3215 import ST3215
-load_dotenv(dotenv_path='.env')
+load_dotenv(dotenv_path='../cupi/.env')
 
 def main():
     print("=== ST3215 List Servos Test ===")
