@@ -1,3 +1,7 @@
+# CUPI Usage
+
+test.py has the scripts with some comments to run the servo to some position.
+in the test folder there is a list servos file that can be run.
 
 # ST3215 Servo Motor Python Module
 
